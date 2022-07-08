@@ -11,8 +11,10 @@
     "builds": "cross-env BABEL_ENV=production babel src -d dist"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^2.1.2",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "vite-plugin-mdx": "^3.5.10"
   },
   "babel": {
     "presets": [
