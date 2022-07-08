@@ -39,3 +39,11 @@ Small.args = {
   size: 'small',
   label: 'Button',
 };
+
+export const Hassomething = Template.bind({});
+Hassomething.args ={
+  something: "",
+  label: "test",
+  disable: false,
+  color: "purple"
+}

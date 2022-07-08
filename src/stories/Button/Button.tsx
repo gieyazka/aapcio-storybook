@@ -1,5 +1,6 @@
 import React from 'react';
 import './button.css';
+import styled from 'styled-components'
 
 interface ButtonProps {
   /**
@@ -18,11 +19,29 @@ interface ButtonProps {
    * Button contents
    */
   label: string;
+  
+  children?: string;
+  
+  // asd
+  something?: string;
+
+  disable?: boolean;
+
+  color? : string;
+
   /**
    * Optional click handler
    */
   onClick?: () => void;
 }
+
+interface test{
+  color?: string
+}
+
+const Mytext =  styled.div`
+  color: purple;
+`
 
 /**
  * Primary UI component for user interaction
@@ -32,8 +51,13 @@ export const Button = ({
   size = 'medium',
   backgroundColor,
   label,
+  something,
+  children,
+  color,
   ...props
 }: ButtonProps) => {
+  console.log(color);
+  
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <button
@@ -42,7 +66,10 @@ export const Button = ({
       style={{ backgroundColor }}
       {...props}
     >
-      {label}
+      <Mytext color='red'>
+        {label + " / "+ something}
+      </Mytext>
+      
     </button>
   );
 };
