@@ -1,7 +1,7 @@
 {
-  "name": "aapcio-ui",
-  "private": true,
-  "version": "0.0.0",
+  "name": "aapico-ui",
+  "private": false,
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -45,7 +45,7 @@
   },
   "description": "aapico ui",
   "main": "index.js",
-  "repository": "https://github.com/gieyazka/aapcio-storybook",
+  "repository": "https://github.com/gieyazka/aapico-storybook",
   "author": "pokkate.e <pokkate.e@aapico.com>",
   "license": "MIT"
 }
